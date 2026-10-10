@@ -165,3 +165,27 @@ footer p { margin-bottom: 0; }
   section h3 { break-after: avoid; }
   a { color: inherit; }
 }
+
+/* Accessible bilingual selector, shared by both pages. */
+.language-switcher {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 4px;
+  margin: 0 0 24px;
+}
+.language-switcher a {
+  display: inline-block;
+  min-width: 44px;
+  padding: 7px 12px;
+  border-radius: 8px;
+  color: var(--muted);
+  text-align: center;
+  font-weight: 700;
+  font-size: 12px;
+  text-decoration: none;
+}
+.language-switcher a:hover,
+.language-switcher a:focus-visible { background: #edf4f8; color: var(--accent-dark); }
+.language-switcher a[aria-current="page"] { background: #eaf4f8; color: var(--accent-dark); }
+@media print { .language-switcher { display: none; } }

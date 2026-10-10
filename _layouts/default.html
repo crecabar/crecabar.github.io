@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'es-CL' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% seo %}
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="alternate" hreflang="es" href="{{ '/' | absolute_url }}">
+  <link rel="alternate" hreflang="en" href="{{ '/en/' | absolute_url }}">
+  <link rel="alternate" hreflang="x-default" href="{{ '/' | absolute_url }}">
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1><a href="{{ '/' | relative_url }}">{{ site.title | escape }}</a></h1>
+      <p>{{ site.description | escape }}</p>
+      <p class="view"><a href="https://github.com/crecabar">GitHub <small>@crecabar</small></a></p>
+    </header>
+    <section>
+      {{ content }}
+    </section>
+    <footer>
+      <p><small>&copy; {{ 'now' | date: '%Y' }} Cristian Recabarren Madrid</small></p>
+    </footer>
+  </div>
+</body>
+</html>
