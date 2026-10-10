@@ -1,8 +1,14 @@
 ---
 layout: default
+lang: es-CL
 title: Cristian Recabarren Madrid
 description: Ingeniero Civil en Computación · Arquitectura de software · Backend · Sistemas operativos
 ---
+
+<nav class="language-switcher" aria-label="Idioma / Language">
+  <a href="{{ '/' | relative_url }}" lang="es" aria-current="page">ES</a>
+  <a href="{{ '/en/' | relative_url }}" lang="en">EN</a>
+</nav>
 
 # Cristian Recabarren Madrid
 
